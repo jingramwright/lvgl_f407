@@ -1,3 +1,6 @@
 [submodule "lib/GxTFT"]
 	path = lib/GxTFT
 	url = https://github.com/jingramwright/GxTFT
+[submodule "lib/lvgl"]
+	path = lib/lvgl
+	url = https://github.com/lvgl/lvgl.git

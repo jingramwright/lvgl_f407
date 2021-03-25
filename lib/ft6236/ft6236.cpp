@@ -58,4 +58,9 @@ void touchInit()
     Wire.setClock(40000);
     Wire.begin();
     pinMode(TOUCH_INT_PIN, INPUT);
+
+    Wire.beginTransmission(0x38);
+    Wire.write(0xA4);
+    Wire.write(0x00); //turn on interrupt
+    Wire.endTransmission();
 }
